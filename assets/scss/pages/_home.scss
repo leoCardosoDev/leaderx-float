@@ -1,0 +1,115 @@
+.section-banner{
+    background-color: transparent;
+    padding: 10rem 0;
+
+    @include respond(tab-port) {
+       padding: 0; 
+    }
+}
+
+.section-about{
+    padding-top: 60rem;
+    margin-top: -25rem;
+
+    @include respond(tab-port) { 
+        padding: 55rem 0;
+        margin-top: -55rem;
+    } 
+}
+
+.section-features{
+    padding-top: 20rem;
+    margin-top: 25rem;
+
+    @include respond(tab-port) { 
+        margin-top: -65rem;
+    }
+}
+
+.section-services{
+    padding-top: 20rem;
+    margin-top: 20rem;
+
+    @include respond(tab-port) { 
+        margin-top: -20rem;
+    }
+}
+
+.section-blog{
+    padding-top: 20rem;
+    padding-bottom: 2rem;
+    margin-top: 20rem;
+
+    @include respond(tab-port) { 
+        margin-top: -15rem;
+    }
+}
+
+.section-testimonials{
+    position: relative;
+    margin-top: 20rem;
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    z-index: 10;
+    height: 120rem;
+
+    @include respond(tab-port) { 
+        background-color: $color-white;
+        margin-top: 10rem;
+        padding: 15rem .3rem;
+        height: auto;
+    }
+}
+
+.section-partners{
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    margin-top: -30rem;
+
+    @include respond(tab-port) { 
+        margin-top: 10rem;
+        padding: 10rem .3rem;
+    }
+
+    .p-partners{
+        font-size: 1.6rem;
+        color: $color-white;
+        padding: 1rem 10rem;
+
+        @include respond(phone) {
+            padding: 1rem 1.5rem;
+        }
+    }
+}
+
+.section-sponsors{
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+    margin-top: 12rem;
+    background-color: $color-white;
+}
+
+.section-contact{
+    position: relative;
+    padding-top: 15rem;
+    padding-bottom: 2rem;
+    margin-top: 0rem;
+    height: 90rem;
+    z-index: 1;
+    background-color: $color-white;
+
+    @include respond(tab-port) { 
+        margin-bottom: 11rem;
+        height: 100rem;
+    }
+}
+
+.section-footer{
+    position: relative;
+    bottom: 0;
+    padding: 5rem 2rem;
+    background-color: $color-black;
+    z-index: 9999;
+    width: 100%;
+    vertical-align: bottom;
+}

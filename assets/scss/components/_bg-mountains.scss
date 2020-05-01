@@ -1,0 +1,28 @@
+.bg-mountains{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 95rem;
+    max-height: 95rem;
+    z-index: -1;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    &__content{
+        min-height: 95rem;
+        max-height: 95rem;
+        width: 100%;
+        //object-fit: cover;
+
+        &--header{
+            min-height: 100rem;
+            max-height: 100rem;
+            width: 100%;
+        }
+    }
+    
+}

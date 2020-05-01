@@ -1,0 +1,31 @@
+&__img{
+    float: left;
+    padding: 5%;
+    margin-top: -2rem;
+}
+
+&__paragraph{
+    margin-top: -3rem;
+    font-weight: 600;
+}
+
+&__text{
+    float: left;
+    font-size: 4rem;
+    
+    &--top{
+        margin-top: -2rem;
+    }
+
+    &--bottom{
+        margin-top: -4rem;
+    }
+}
+
+&__span{
+    font-size: 8rem;
+    color:$color-primary;
+    font-weight: bold;
+    margin-top: -3rem;
+    display: inline-block;
+}

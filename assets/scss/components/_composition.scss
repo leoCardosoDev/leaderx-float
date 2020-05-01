@@ -1,0 +1,99 @@
+.composition{
+    position: relative;
+
+    &__photo{
+        width: 115%;
+        position: absolute;
+
+        @include respond(tab-port) {
+            margin: 0 auto;
+            width: 60% !important;
+            position: static;
+        }
+
+        @include respond(phone) {
+            margin: 0 auto;
+            position: static;
+            width: 100% !important;
+        }
+
+        &--p1{
+            left: -10rem;
+            top: -30rem;
+        }
+
+        &--p2{ 
+            top: -30rem;
+            right: -4.5rem;
+        }
+
+        &--p3{
+            left: -10rem;
+            top: -30rem;
+        }
+
+        &--p4{
+            top: -30rem;
+        }
+    }
+
+    &__icon{
+        position: relative;
+        width: 4.50rem;
+        height: 4.25rem;
+        z-index: 9999; 
+    }
+
+    &__link{
+        position: absolute;
+        top: -33rem;  
+        width: 100%;
+        height: 100%;
+        padding-top: 58%;
+
+        @include respond(tab-port) {
+            top: 0rem; 
+        }
+
+        &--l1{
+            left: -.5rem;
+
+            @include respond(tab-port) {
+                left: 5.5rem;
+            }
+
+            @include respond(phone) {
+                top: -1.5rem;
+            }
+
+        }
+
+        &--l2{
+            right: -45rem;
+
+            @include respond(phone) {
+                top: -41.5rem;
+                right: -25rem!important;
+            }
+
+        }
+
+        &--l3{
+            right: -4rem;
+        }
+
+        &--l4{
+
+            @include respond(phone) {
+                top: -43.5rem;
+                right: -25rem!important;
+            }
+        }
+    }
+
+    &__img{
+        animation: shadow-pulse 2s infinite;
+        border-radius: 50%;
+    }
+ 
+}

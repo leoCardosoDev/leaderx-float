@@ -1,0 +1,66 @@
+.u-center-text{text-align: center !important;}
+.u-left-text{text-align: left !important;}
+.u-right-text{text-align: right !important;}
+
+.u-margin-bottom-small{margin-bottom: 1.5rem !important;}
+.u-margin-bottom-medium{margin-bottom: 4rem !important;}
+.u-margin-bottom-big{margin-bottom: 8rem !important;}
+
+.u-margin-top-big{margin-top: 8rem !important;}
+.u-margin-top-small{margin-top: 2rem !important;}
+.u-margin-top-medium{margin-top: 6rem !important;}
+.u-margin-top-huge{margin-top: 10rem !important;}
+
+.u-progress-bar{
+    border-radius: 2.5rem;
+    background-color: $color-white;
+}
+
+.u-progress-bar--fill{
+    background-color: $color-primary;   
+    height: 1.1rem;
+    border-radius: 1rem;
+
+    &--60{
+        width: 60%!important;
+    }
+
+    &--40{
+        width: 40%!important;
+    }
+}
+
+
+.row-reverse, .row{
+    @include respond(tab-port) { 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start!important;
+    }
+
+    @include respond(phone) { 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start!important;
+    }
+}
+
+.first-div{
+    @include respond(tab-port) { 
+        order: 1!important;
+    }
+
+    @include respond(phone) { 
+        order: 1!important;
+    }
+}
+
+.second-div{
+    @include respond(tab-port) { 
+        order: 2!important;
+    }
+
+    @include respond(phone) { 
+        order: 2!important;
+    }
+}

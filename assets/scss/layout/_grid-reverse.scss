@@ -1,0 +1,55 @@
+.row-reverse{
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:first-child){
+        margin-bottom: $gutter-vertical;
+
+        @include respond(phone) {
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+    
+    @include respond(phone) {
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+
+    @include clearfix;
+
+    [class^="r-col-"]{
+        float: right;
+        &:not(:first-child){
+            margin-left: $gutter-horizontal;
+
+            @include respond(phone) {
+                margin-left: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
+        }
+
+        @include respond(phone) {
+            width: 100% !important;
+        }
+
+
+    }
+
+    .r-col-1-of-2{
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+
+        @include respond(tab-port) {
+            width: 100% !important;
+            margin: $gutter-vertical-small 0;
+        }
+
+        @include respond(phone) {
+            width: 100% !important;
+        }
+    }
+    
+}

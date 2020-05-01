@@ -1,0 +1,53 @@
+.footer{
+    @include clearfix;
+    position: absolute;
+    bottom: 50%;
+    vertical-align: bottom;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    &__navigation{}
+
+    &__list{
+        list-style: none;
+    }
+
+    &__item{
+        display: inline-block;
+
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link{
+        &:link,
+        &:visited{
+            color: $color-white;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        &:hover,
+        &:active{
+            color: $color-primary;
+        }
+    }
+
+
+    &__copyright{
+        color: $color-white;
+        float: right;
+    }
+
+    @include respond(tab-port) {
+        position: static;
+    }
+
+    @include respond(phone) {
+        position: static;
+        
+    }
+
+}

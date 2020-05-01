@@ -1,0 +1,152 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 35rem;
+
+    &__side{
+        height: 35rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 2.5rem;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
+
+        &--front{
+            background-color: $color-white;
+        }
+
+        &--back{
+            background-blend-mode: hard-light;
+            transform: rotateY(180deg);
+
+            &-1{
+                background-image: linear-gradient(to right bottom,  $color-black, $color-secondary-dark ), url('../img/cancela.jpg');
+            }
+
+            &-2{
+                background-image: linear-gradient(to right bottom,  $color-black, $color-secondary-dark ), url('../img/walter.jpg');
+            }
+
+            &-3{
+                background-image: linear-gradient(to right bottom,  $color-black, $color-secondary-dark ), url('../img/ns.jpg');
+            }
+
+            &-4{
+                background-image: linear-gradient(to right bottom,  $color-black, $color-secondary-dark ), url('../img/doutora.jpg');
+            }
+        }
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLE
+    &__picture{
+        background-size: cover;
+        height: 35rem;
+        background-blend-mode: screen;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+ 
+        &--1{
+            background-image:  url('../img/cancela.jpg');
+        }
+
+        &--2{
+            background-image: url('../img/walter.jpg');
+        }
+
+        &--3{
+            background-image: url('../img/ns.jpg');
+        }
+
+        &--4{
+            background-image: url('../img/doutora.jpg');
+        }
+    }
+
+
+    &__details{
+        padding: 3rem;
+
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey;
+                }
+            }
+        }
+    }
+
+    // BACK SIDE STYLE
+    &__cta{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        color: $color-white!important;
+    }
+
+    &__price-box{
+        margin: 4rem 0;
+    }
+
+    &__name{
+        font-size: 1.7rem;
+        color: $color-white;
+        padding: 1.5rem 1.3rem;
+    }
+    
+    &__curriculum{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    &__social{
+        display: inline-block;
+        padding-top: 1.5rem;
+        margin-top: 2rem;
+        border-top: 1px solid $color-white;
+    }
+
+    &__social-list{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center; 
+    }
+
+    &__social-link{
+        text-decoration: none;
+        color: $color-white;
+        margin-left: 1rem;
+
+    }
+
+    &__social-img{
+        width: 2rem;
+        height: auto;
+    }
+}
